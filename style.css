@@ -1,3 +1,4 @@
+/* import font */
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
 
 body {
@@ -11,6 +12,7 @@ body {
   background-size: cover;
 }
 
+/* kolom daftar list link bio (container, avatars, name, bio, item-list, item)*/
 .container {
   display: flex;
   flex-direction: column;
@@ -71,6 +73,43 @@ body {
   font-weight: 500;
 }
 
+/* baris daftar list link bio (container-row, list-item-row, item-row, avatar-row) */
+.container-row {
+  display: flex;
+  justify-content: center;
+}
+
+.list-item-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.item-row:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  background-color: #ffd800;
+}
+
+.item-row {
+  display: block;
+  padding: 0;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  margin-top: 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.avatar-row {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+/* layar ukuran mobile */
 @media only screen and (max-width: 768px) {
   .item {
     width: 300px;
